@@ -1,0 +1,60 @@
+#lane{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    text-align: center;
+}
+#circle-btn{
+    padding: 20px !important;
+}
+.hero-main-div{
+    height: 823px;
+    width: 1142px;
+    /* border: solid black; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 80px auto;
+}
+
+tbody{
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+th{
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: 600 !important;
+    font-family: "Montserrat";
+}
+.ant-table-cell::before{
+    width: 0% !important;
+}
+ a{
+  color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: black!important;
+}
+#row{
+    padding-top: 35px;
+    
+    border-bottom: 2px solid #575757;
+}
+#name-div{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500!important;
+}
+#filter-btn{
+    background: #DD5859;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    margin-top: 142px;
+    margin-bottom: 52px;
+    height: 46px!important;
+    width: 141px !important;
+}
+td span button{
+    display: none !important;
+}
