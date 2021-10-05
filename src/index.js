@@ -6,7 +6,7 @@ import FilterBtn from './Components/FilterBtn/FilterBtn';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <FilterBtn/>
+    {/* <FilterBtn/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

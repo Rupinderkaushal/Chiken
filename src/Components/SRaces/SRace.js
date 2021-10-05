@@ -2,8 +2,10 @@ import { Table,Row,Col,Button } from 'antd';
 import Chik  from "../../chik.png";
 import React from 'react';
 import Box from "../../box.png";
+import clock from "../../va.png";
+import clock1 from "../../vb.png";
 import "../tablecol/tb.css";
-function NestedTable() {
+function SRace() {
   const expandedRowRender = () => {
     const styLE ={
  
@@ -23,6 +25,16 @@ function NestedTable() {
   }
   
     const columns =[
+        {
+            title:"Lane",key:'lane',
+            render:(text,record)=>{
+                return(
+                    <div style={textAliGn} >
+                        {record.lane}
+                    </div>
+                )
+            }
+        },
       {
           title:"Image",key:'image',
           render:()=>{
@@ -34,16 +46,7 @@ function NestedTable() {
           }
      
       },
-      {
-          title:"Lane",key:'lane',
-          render:(text,record)=>{
-              return(
-                  <div style={textAliGn} >
-                      {record.lane}
-                  </div>
-              )
-          }
-      },
+      
       {
           title:"Name",key:'name',
           render:()=>{
@@ -108,45 +111,31 @@ function NestedTable() {
   const data= [
       {
           name:'',
-          lane:'3',
+          lane:'1',
           races:'12',
           key:'1'
       },
       {
   name:"",
-  lane:"5",
+  lane:"2",
   races:'7',
   key:'2'
       },
       {
           name:"",
-          lane:"8",
+          lane:"3",
           races:'3',
           key:'3'
               },
   ]
    
     return(
-      <div style={{background:"#FDD3D3"}} >
+      <div  >
        <Row style={ROW} >
-                <Col span={24}><p id="lane">Pick a Lane to enter</p></Col>
+                <Col  span={10}><h3 >Juvinile Jubile<span style={{fontSize:'20px',marginLeft:'50px'}}><small>Starts In: <label style={{margin:'0px 10px'}}><img src={clock}/><label><img style={{marginLeft:'-15px',marginTop:'5px'}} src={clock1}/></label></label><label>00:45:50</label></small></span></h3></Col>
+                   <Col  offset={12} span={2}><Button style={{borderRadius:'5px',fontSize:'18px',height:'37px'}} type='primary'>Watch</Button></Col>     
             </Row>
-            <Row style={ROW} >
-                <Col offset={1} style={LanE} span={2.5}>Open Lane</Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>2</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>3</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>4</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>5</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>6</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>7</label></Button></Col>
-               
-            </Row>
-          <Row  style={{paddingBottom:"30px"}}>
-          <Col offset={8} span={2.5} ><Button style={styLE} ><label style={Lable}>8</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>9</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>10</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>11</label></Button></Col>
-          </Row>
+            
          <Table  columns={columns} dataSource={data} pagination={false} />
       </div>
     );
@@ -157,7 +146,7 @@ function NestedTable() {
     age: 'A',
     address: 'US San Francisco',
     distance: '1600m',
-   
+    race:'1m 42s',
     key: '1'
 },
 {
@@ -165,24 +154,28 @@ function NestedTable() {
     age: 'A',
     address: 'US San Francisco',
     distance: '1600m',
+    race:'2m 46s',
     key: '2'
 },
 {
     name: 'Juvinile Jubile',
     age: 'A',
     address: 'US San Francisco',
+    race:'1m 1s',
     distance: '1600m',
     key: '3'
 }, {
     name: 'Juvinile Jubile',
     age: 'A',
     address: 'US San Francisco',
+    race:'Live',
     distance: '1600m',
     key: '4'
 }, {
     name: 'Juvinile Jubile',
     age: 'A',
     address: 'US San Francisco',
+    race:'Live',
     distance: '1600m',
     key: '5'
 }, {
@@ -190,12 +183,14 @@ function NestedTable() {
     age: 'A',
     address: 'US San Francisco',
     distance: '1600m',
+    race:'Live',
     key: '6'
 }, {
     name: 'Juvinile Jubile',
     age: 'A',
     address: 'US San Francisco',
     distance: '1600m',
+    race:'Live',
     key: '7'
 },
 ]
@@ -256,16 +251,16 @@ const columns = [
             )
         }
     },
-    {
-        title: 'Entry Fee',
-        render:()=>{
-            return(
-                <div id="name-div">
-                    <p>$5.99</p>
-                </div>
-            )
-        }
-    },
+    // {
+    //     title: 'Entry Fee',
+    //     render:()=>{
+    //         return(
+    //             <div id="name-div">
+    //                 <p>$5.99</p>
+    //             </div>
+    //         )
+    //     }
+    // },
     {
         title: 'Prize Pool',
         render:()=>{
@@ -277,11 +272,11 @@ const columns = [
         }
     },
     {
-        title: 'Capacity',
-        render:()=>{
+        title: 'Starts In',
+        render:(text,record)=>{
             return(
                 <div id="name-div">
-                    <p>3/8</p>
+                   {record.race}
                 </div>
             )
         }
@@ -314,4 +309,4 @@ const columns = [
     </div>
   );
 }
-export default NestedTable;
+export default SRace;

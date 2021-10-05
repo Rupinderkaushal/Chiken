@@ -1,6 +1,6 @@
 import { Form, Input, Button, Checkbox,Row,Col, Select, Divider } from 'antd';
 const {Option} = Select;
-const FilterBtn = () => {
+const FilterBtn2 = () => {
   function onChange(e) {
     console.log(`checked = ${e.target.checked}`);
   }
@@ -79,7 +79,7 @@ const btn =
       <Row>
           <Col span={10} offset={1} >
           <Form.Item
-          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Entry Fee<span><small>(min)</small></span></p>}
+          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Prize Pool<span><small>(min)</small></span></p>}
   //  label="(min)"   
    rules ={{required : false, }}
    >
@@ -89,7 +89,7 @@ const btn =
           </Col>
           <Col span={10} offset={2} >
           <Form.Item
-          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Entry Fee<span><small>(max)</small></span></p>}
+          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Prize Pool<span><small>(max)</small></span></p>}
           
           // label="Entry Fee(max)"   
           rules ={{required : false }}
@@ -123,7 +123,7 @@ const btn =
      <Row>
          <Col offset={1}>
          <Form.Item>
-        <Button style={btn} type='danger' ghost>
+        <Button  style={btn} type='danger' ghost>
         <label style={{fontSize:'20px',fontFamily:'Montserrat'}}>Reset</label>
         </Button>
       </Form.Item>
@@ -141,4 +141,4 @@ const btn =
   );
 };
 
-export default FilterBtn;
+export default FilterBtn2;
