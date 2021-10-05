@@ -21,7 +21,7 @@ function NestedTable() {
   const textAliGn ={
       textAlign:"center"
   }
-  
+//   const isWebDevice = useMediaQuery('(max-width:849px)');
     const columns =[
       {
           title:"Image",key:'image',
@@ -202,6 +202,7 @@ function NestedTable() {
 const columns = [
     {
         title: 'Event',
+        responsive: ['sm'],
         render: (text, record) => {
             return (
                 <div id="name-div">
@@ -213,6 +214,7 @@ const columns = [
     },
     {
         title: 'Location',
+        responsive: ['sm'],
         render: (text, record) => {
             console.log(record.address);
             return (
@@ -226,6 +228,7 @@ const columns = [
         key: 'key'
     }, {
         title: 'Pecking order',
+        responsive: ['sm'],
         render: (text, record) => {
             return (
                 <div style={{ textAlign: "center", background: "#2B2B2B", color: "white", width: "37px", paddingTop: "5px", borderRadius: "3px", height: "32px", margin: "auto" }}>
@@ -237,6 +240,7 @@ const columns = [
     },
     {
         title: 'Distance',
+        responsive: ['sm'],
         render: (text, record) => {
             return (
                 <div id="name-div">
@@ -248,6 +252,7 @@ const columns = [
 
     {
         title: 'Terrain',
+        responsive: ['sm'],
         render:() =>{
             return(
                 <div style={{textAlign:"center"}}>
@@ -258,6 +263,7 @@ const columns = [
     },
     {
         title: 'Entry Fee',
+        responsive: ['sm'],
         render:()=>{
             return(
                 <div id="name-div">
@@ -268,6 +274,7 @@ const columns = [
     },
     {
         title: 'Prize Pool',
+        responsive: ['sm'],
         render:()=>{
             return(
                 <div id="name-div">
@@ -278,6 +285,7 @@ const columns = [
     },
     {
         title: 'Capacity',
+        responsive: ['sm'],
         render:()=>{
             return(
                 <div id="name-div">

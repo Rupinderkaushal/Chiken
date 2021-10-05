@@ -4,8 +4,9 @@
     text-align: center;
 } */
 #nav-col{
-    margin-left: 128px;
+    /* margin-left: 128px; */
     margin-top: 15px;
+    
 }
 
 #nav-ul{
@@ -16,13 +17,7 @@
     color: black;
 }
 
-#nav-col-two{
-    margin-right: 128px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+
 .col-a a{
     margin: 30px 15px;
     text-decoration: none;
@@ -86,6 +81,55 @@ margin-right: 10px;
 #usd1{
     margin-left: 30px;
     padding-top: 5px;
+}
+#hamburger{
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#hamburger div , #hamburger div:after, #hamburger div:before{
+    background-color: black;
+    width: 35px;
+    height: 5px;
     
-
+}
+#hamburger div:after, #hamburger div:before{
+    content: '';
+    position: absolute;
+    cursor: pointer;
+}
+#hamburger div:after{
+    transform: translateY(200%);
+}
+#hamburger div:before{
+    transform: translateY(-200%);
+}
+#hamburger.open div:before {
+    transform: rotate(45deg);
+  }
+  
+  #hamburger.open div:after {
+    transform: rotate(-45deg);
+  }
+  #hamburger.open div {
+    background: transparent;
+  }  
+  #overlay.menu {
+    transform: translateY(200%);
+  }
+@media (max-width:849px){
+    #hamburger{
+        display: block;
+    }
+    #nav-col-two{
+        display: none;
+    }
+    #main-row{
+        height: inherit;
+    }
+    
+    
 }
