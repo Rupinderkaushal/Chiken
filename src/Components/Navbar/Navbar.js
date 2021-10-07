@@ -46,10 +46,10 @@ const { height, width } = useWindowDimensions();
       if (!open) {
         
         hamburger.classList.add("open");
-        // menu.style.display='block';
+        menu.style.display='block';
       } else {
         hamburger.classList.remove("open");
-        // menu.style.display='none';
+        menu.style.display='none';
       }
       open = !open;
     };
