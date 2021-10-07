@@ -150,7 +150,7 @@ function NestedTable() {
                 <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>10</label></Button></Col>
                 <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>11</label></Button></Col>
           </Row>
-         <Table  columns={columns} dataSource={data} pagination={false} />
+         <Table  scroll={{x:400}} columns={columns} dataSource={data} pagination={false} />
       </div>
     );
   };

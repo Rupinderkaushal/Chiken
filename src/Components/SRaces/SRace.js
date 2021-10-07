@@ -136,7 +136,7 @@ function SRace() {
                    <Col  offset={12} span={2}><Button style={{borderRadius:'5px',fontSize:'18px',height:'37px'}} type='primary'>Watch</Button></Col>     
             </Row>
             
-         <Table  columns={columns} dataSource={data} pagination={false} />
+         <Table scroll={{x:400}} columns={columns} dataSource={data} pagination={false} />
       </div>
     );
   };
@@ -298,6 +298,7 @@ const columns = [
   return (
     <div >
         <Table
+        scroll={{x:400}}
       columns={columns}
       expandRowByClick={true}
       expandable={{ expandedRowRender }}
