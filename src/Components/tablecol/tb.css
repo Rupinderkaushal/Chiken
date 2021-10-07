@@ -61,3 +61,8 @@ td span button{
 .ant-table-row-level-0 {
     
 }
+@media (max-width:'906px'){
+    #tabb{
+        background-color: #DD5859;
+    }
+}

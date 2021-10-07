@@ -3,6 +3,7 @@ import Chik  from "../../chik.png";
 import React from 'react';
 import Box from "../../box.png";
 import "../tablecol/tb.css";
+import {useEffect,useState} from "react"
 function NestedTable() {
   const expandedRowRender = () => {
     const styLE ={
@@ -125,6 +126,8 @@ function NestedTable() {
           key:'3'
               },
   ]
+
+  
    
     return(
       <div style={{background:"#FDD3D3"}} >
@@ -154,7 +157,7 @@ function NestedTable() {
 
   const data = [{
     name: 'Juvinile Jubile',
-    age: 'A',
+    age: 'Chicks',
     address: 'US San Francisco',
     distance: '1600m',
    
@@ -162,7 +165,7 @@ function NestedTable() {
 },
 {
     name: 'Juvinile Jubile',
-    age: 'A',
+    age: 'B',
     address: 'US San Francisco',
     distance: '1600m',
     key: '2'
@@ -181,19 +184,19 @@ function NestedTable() {
     key: '4'
 }, {
     name: 'Juvinile Jubile',
-    age: 'A',
+    age: 'B',
     address: 'US San Francisco',
     distance: '1600m',
     key: '5'
 }, {
     name: 'Juvinile Jubile',
-    age: 'A',
+    age: 'B',
     address: 'US San Francisco',
     distance: '1600m',
     key: '6'
 }, {
     name: 'Juvinile Jubile',
-    age: 'A',
+    age: 'C',
     address: 'US San Francisco',
     distance: '1600m',
     key: '7'
@@ -210,13 +213,14 @@ const columns = [
                     {/* {record.name} */}
                 </div>)
         },
+        
         key: 'key'
     },
     {
         title: 'Location',
-       
+       response:"sm",
         render: (text, record) => {
-            console.log(record.address);
+            // console.log(record.address);
             return (
                 <div id="name-div">
                     {/* {record.address} */}
@@ -292,7 +296,8 @@ const columns = [
                     <p>3/8</p>
                 </div>
             )
-        }
+        },
+    
     },
 ]
 
@@ -307,10 +312,29 @@ const columns = [
 //     // this.setState({expandedRowKeys: keys});
 // }
  
+// const [jsonData, setJsonData] = useState("")
+
+// const getDataApi = async()=>{
+
+//     const apiData = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+//     const jsondata = await apiData.json()
+    
+//     setJsonData(jsondata)
+
+//     console.log("json data ### ", jsondata)
+//   }
+
+//   useEffect(() => {
+//     getDataApi()
+//   }, [])
 
   return (
     <div >
+        {/* {jsonData && jsonData.map((value)=>(<p>{value.title}</p>))} */}
         <Table
+        scroll={{x:400}}
+        id='tabb'
       columns={columns}
       expandRowByClick={true}
       expandable={{ expandedRowRender }}

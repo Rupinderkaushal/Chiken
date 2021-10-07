@@ -33,7 +33,7 @@ const Hero = () => {
                     <TabPane   tab='Enter Race' key="1">
                       <div id="root1"></div>
                     <Divider orientation='right'><Button onClick={showModal} id="filter-btn"><i  class="fa fa-sliders" aria-hidden="true"></i>  Filters</Button>
-                    <Modal  visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} >
+                    <Modal style={{borderRadius:'20px'}} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} >
                         <FilterBtn/>
                     </Modal>
                     </Divider>

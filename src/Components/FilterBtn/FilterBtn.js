@@ -1,9 +1,6 @@
 import { Form, Input, Button, Checkbox,Row,Col, Select, Divider } from 'antd';
 const {Option} = Select;
 const FilterBtn = () => {
-  function onChange(e) {
-    console.log(`checked = ${e.target.checked}`);
-  }
   const textshow = ()=>{
     const hddr = document.getElementById('root1');
     return(
@@ -46,10 +43,10 @@ const btn =
         rules={[{ required: false, message: 'Please input your username!' }]}
       >
           <Select style={{borderRadius:'10px'}}>
-              <Option style={{marginBottom:'10px'}}><Checkbox onChange={onChange}>A</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >B</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >C</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >Chicks</Checkbox></Option>
+              <Option value="A" style={{marginBottom:'10px'}}><Checkbox>A</Checkbox></Option>
+              <Option value="B" style={{marginBottom:'10px'}} ><Checkbox  >B</Checkbox></Option>
+              <Option value="C" style={{marginBottom:'10px'}} ><Checkbox >C</Checkbox></Option>
+              <Option value="Chicks" style={{marginBottom:'10px'}} ><Checkbox  >Chicks</Checkbox></Option>
           </Select>
         {/* <Input style={{borderRadius:'10px'}} /> */}
       </Form.Item>
@@ -65,12 +62,12 @@ const btn =
         rules={[{ required: false, message: 'Please input your password!' }]}
       >
           <Select>
-          <Option style={{marginBottom:'10px'}}><Checkbox onChange={onChange}>100m</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >120m</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >140m</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >160m</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}}><Checkbox onChange={onChange}>180m</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >200m</Checkbox></Option>
+          <Option value="100m" style={{marginBottom:'10px'}}><Checkbox>100m</Checkbox></Option>
+              <Option value="120m" style={{marginBottom:'10px'}} ><Checkbox >120m</Checkbox></Option>
+              <Option value="140m" style={{marginBottom:'10px'}} ><Checkbox  >140m</Checkbox></Option>
+              <Option value="160m" style={{marginBottom:'10px'}} ><Checkbox  >160m</Checkbox></Option>
+              <Option value="180m" style={{marginBottom:'10px'}}><Checkbox>180m</Checkbox></Option>
+              <Option value="200m" style={{marginBottom:'10px'}} ><Checkbox >200m</Checkbox></Option>
           </Select>
         {/* <Input.Password  style={{borderRadius:'10px'}} /> */}
       </Form.Item>
@@ -110,12 +107,12 @@ const btn =
           rules={{required: false}}
           >
             <Select>
-            <Option style={{marginBottom:'10px'}}><Checkbox onChange={onChange}>Dirt</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >Grass</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >Road</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >Rock</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}}><Checkbox onChange={onChange}>Sand</Checkbox></Option>
-              <Option style={{marginBottom:'10px'}} ><Checkbox onChange={onChange} >Snow</Checkbox></Option>
+            <Option value="Dirt" style={{marginBottom:'10px'}}><Checkbox>Dirt</Checkbox></Option>
+              <Option value="Grass" style={{marginBottom:'10px'}} ><Checkbox >Grass</Checkbox></Option>
+              <Option value="Road" style={{marginBottom:'10px'}} ><Checkbox >Road</Checkbox></Option>
+              <Option value="Rock" style={{marginBottom:'10px'}} ><Checkbox >Rock</Checkbox></Option>
+              <Option value="Sand" style={{marginBottom:'10px'}}><Checkbox>Sand</Checkbox></Option>
+              <Option value="Snow" style={{marginBottom:'10px'}} ><Checkbox >Snow</Checkbox></Option>
             </Select>
           </Form.Item>
           </Col>

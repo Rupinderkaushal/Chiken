@@ -23,5 +23,6 @@
     display: none !important;
 }
 .ant-modal-content{
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 0px !important;
 }
