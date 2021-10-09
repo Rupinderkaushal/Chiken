@@ -21,11 +21,11 @@ const btn =
 }
 
   return (
-    <Form style={{padding:'10px',fontFamily:"Montserrat"}}
+    <Form style={{fontFamily:"Montserrat"}}
       name="basic"
     
      layout="vertical"
-      autoComplete="off"
+      autoComplete="on"
     >
       <Row>
         <Col>
@@ -36,7 +36,7 @@ const btn =
         <Col span={10} offset={1}  >
           <Form.Item 
           label={ 
-            <p style={{fontSize:"20px",color:'#666666'}}>Packing Order</p>
+            <p style={{fontSize:"15px",color:'#666666'}}>Packing Order</p>
             }
         // label="Packing Order"
         name="username"
@@ -56,7 +56,7 @@ const btn =
           <Col  span={10} offset={2}>
           <Form.Item
         label={
-          <p  style={{fontSize:"20px",color:'#666666'}} >Distance</p>
+          <p  style={{fontSize:"15px",color:'#666666'}} >Distance</p>
         }
         name="password"
         rules={[{ required: false, message: 'Please input your password!' }]}
@@ -76,7 +76,7 @@ const btn =
       <Row>
           <Col span={10} offset={1} >
           <Form.Item
-          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Entry Fee<span><small>(min)</small></span></p>}
+          label={ <p  style={{fontSize:"15px",color:'#666666'}} >Entry Fee<span><small>(min)</small></span></p>}
   //  label="(min)"   
    rules ={{required : false, }}
    >
@@ -86,7 +86,7 @@ const btn =
           </Col>
           <Col span={10} offset={2} >
           <Form.Item
-          label={ <p  style={{fontSize:"20px",color:'#666666'}} >Entry Fee<span><small>(max)</small></span></p>}
+          label={ <p  style={{fontSize:"15px",color:'#666666'}} >Entry Fee<span><small>(max)</small></span></p>}
           
           // label="Entry Fee(max)"   
           rules ={{required : false }}
@@ -101,7 +101,7 @@ const btn =
           <Col offset={1} span={22}>
           <Form.Item
           label={
-            <p  style={{fontSize:"20px",color:'#666666'}} >Terrain Type</p>
+            <p  style={{fontSize:"15px",color:'#666666'}} >Terrain Type</p>
           }
           // label="Terrain Type"
           rules={{required: false}}
@@ -121,7 +121,7 @@ const btn =
          <Col offset={1}>
          <Form.Item>
         <Button style={btn} type='danger' ghost>
-        <label style={{fontSize:'20px',fontFamily:'Montserrat'}}>Reset</label>
+        <label style={{fontSize:'15px',fontFamily:'Montserrat'}}>Reset</label>
         </Button>
       </Form.Item>
          </Col>
@@ -129,7 +129,7 @@ const btn =
          <Form.Item>
              <Button onClick={textshow} style={{ width:'164px',borderRadius:'10px',
    height:'40px',}}  type="danger">
-                 <label style={{fontFamily:'Montserrat',fontSize:'20px'}}>Filter</label>
+                 <label style={{fontFamily:'Montserrat',fontSize:'15px'}}>Filter</label>
              </Button>
          </Form.Item>
          </Col>

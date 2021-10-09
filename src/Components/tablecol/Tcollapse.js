@@ -271,7 +271,7 @@ const columns = [
         render:()=>{
             return(
                 <div id="name-div">
-                    <p>$5.99</p>
+                    <p> <span style={{fontWeight:'bold',color:"#27B18A"}}>$5.99</span>USD</p>
                 </div>
             )
         }
@@ -282,7 +282,7 @@ const columns = [
         render:()=>{
             return(
                 <div id="name-div">
-                    <p>$5.99</p>
+                       <p> <span style={{fontWeight:'bold',color:"#27B18A"}}>$5.99</span>USD</p>
                 </div>
             )
         }

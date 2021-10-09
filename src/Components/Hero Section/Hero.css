@@ -48,6 +48,35 @@ a:hover{
     height: 46px!important;
     width: 141px !important;
 }
+#root1{
+    display: flex;
+    justify-content: space-between;
+}
+.ant-tabs-ant-list{
+    border-bottom: solid red;
+    width: 100%;
+}
+.ant-divider::before{
+    display: none;
+}
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap{
+    border-bottom: 2px solid #575757;
+}
+
+.ant-tabs-ink-bar {
+    height: 5px;
+    background: black !important;
+  }
+.ant-modal-content{
+    width:fit-content;
+    border-radius: 15px;
+}
+.ant-tabs-bar {
+    border-bottom: 1px solid black !important;
+}
+.ant-modal-body, .ant-form{
+    padding: 0px !important;
+}
 @media (max-width:849px){
     
 }

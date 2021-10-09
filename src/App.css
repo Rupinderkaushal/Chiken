@@ -1,8 +1,9 @@
 .App{
-    background-image: url("../src/bg.png");
+    background-image: url("../src/banner2.jpg");
     font-family: 'Montserrat';
     background-size: cover;
     padding-bottom: 70px;
+    background-position: center;
 }
 .ant-tabs-tab-btn{
     font-size: 24px;
