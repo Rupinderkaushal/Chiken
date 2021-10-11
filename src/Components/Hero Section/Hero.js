@@ -32,8 +32,8 @@ const Hero = () => {
 
                     <TabPane  tab='Enter Race' key="1">
                             <div id="root1">
-                                <Button style={{ marginLeft: '20px', marginTop: '50px', marginBottom: '50px', borderRadius: "5px", height: '50px' }} type="primary">Open Race</Button>
-                                <Button style={{ marginRight: '20px', marginTop: '50px', marginBottom: '50px', borderRadius: "5px", height: '50px', background: "#DD5859", color: 'white', border: 'none' }} onClick={showModal} ><span style={{ marginRight: '10px' }}><i class="fa fa-sliders" aria-hidden="true"></i></span>FIlters</Button>
+                                <Button style={{ marginLeft: '20px',width:'104px', marginTop: '50px', marginBottom: '50px', borderRadius: "5px", height: '50px' }} type="primary">Open Race</Button>
+                                <Button style={{ marginRight: '20px',width:'104px', marginTop: '50px', marginBottom: '50px', borderRadius: "5px", height: '50px', background: "#DD5859", color: 'white', border: 'none' }} onClick={showModal} ><span style={{ marginRight: '10px' }}><i class="fa fa-sliders" aria-hidden="true"></i></span>FIlters</Button>
                                 <Modal style={{ borderRadius: '20px' }} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} >
                                     <FilterBtn />
                                 </Modal>
