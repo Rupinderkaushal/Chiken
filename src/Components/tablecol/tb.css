@@ -61,6 +61,19 @@ td span button{
 .ant-table-row-level-0 {
     
 }
+@media (min-width:320px) and (max-width:360px){
+    #lane{
+        font-size: 25px !important;
+        
+    }
+    .ant-col-offset-1{
+        font-size: 15px !important;
+    }
+    #btn-btn{
+        width: 75px !important;
+        height: 40px !important;
+    }
+}
 @media (max-width:'906px'){
     #tabb{
         background-color: #DD5859;

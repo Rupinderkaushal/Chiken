@@ -139,19 +139,19 @@ function NestedTable() {
             </Row>
             <Row style={ROW} >
                 <Col offset={1} style={LanE} span={2.5}>Open Lane</Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>2</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>3</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>4</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>5</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>6</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>7</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>2</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>3</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>4</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>5</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>6</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>7</label></Button></Col>
                
             </Row>
           <Row  style={{paddingBottom:"30px"}}>
-          <Col offset={8} span={2.5} ><Button style={styLE} ><label style={Lable}>8</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>9</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>10</label></Button></Col>
-                <Col  span={2.5} ><Button style={styLE} ><label style={Lable}>11</label></Button></Col>
+          <Col offset={8} span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>8</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>9</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>10</label></Button></Col>
+                <Col  span={2.5} ><Button id="btn-btn" style={styLE} ><label style={Lable}>11</label></Button></Col>
           </Row>
          <Table  scroll={{x:400}} columns={columns} dataSource={data} pagination={false} />
       </div>

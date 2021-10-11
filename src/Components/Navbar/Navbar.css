@@ -91,7 +91,7 @@ margin-right: 10px;
     display: none;
 }
 #hamburger div , #hamburger div:after, #hamburger div:before{
-    background-color: black;
+    background-color: #AC7D38;
     width: 35px;
     height: 5px;
     
@@ -129,9 +129,7 @@ margin-right: 10px;
     }
     #main-row{
         height: inherit;
-    }
-    
-    
+    }  
 }
 
 
@@ -192,3 +190,73 @@ margin-right: 10px;
     margin: 10px 0;
     float: right;
 }
+@media (min-width:376px)and (max-width:411px){
+    .col-a{
+        margin-left: 30px;
+    }
+    #nav-col-row{
+        margin-left: 41px;
+    }
+}
+@media (min-width:412px)and (max-width:414px){
+    .col-a{
+        margin-left: 30px;
+    }
+    #nav-col-row{
+        margin-left: 36px;
+    }
+}
+@media(min-width:361px) and (max-width:376px){
+    .col-a{
+        margin-left: 12px ;
+    }
+    #nav-col-row{
+        margin-left: 18px ;
+    }
+    
+}
+@media (min-width:320px) and (max-width:360px){
+    .col-a{
+        margin-left: 3px;
+    
+    }
+    #nav-col-row{
+        margin-left: 1px;
+    }
+    .ant-tabs-tab-btn{
+      font-size: 15px !important;
+    }
+    .ant-table-thead th {
+        font-size: 15px !important;
+    }
+    #name-div {
+        font-size: 13px !important;
+    }
+}
+@media (min-width:416px)and (max-width:540px){
+    .col-a{
+        margin-left: 86px;
+    }
+    #nav-col-row{
+        margin-left: 99px;
+    }
+}
+@media (min-width:542px)and (max-width:768px){
+    .col-a{
+        margin-left: 7px;
+    }
+   
+}
+@media (min-width:845px)and (max-width:919px){
+    .col-a{
+        margin-left: 66px;
+    }
+   
+}
+@media (min-width:920px)and (max-width:975px){
+    .col-a{
+        margin-left: 101px;
+    }
+   
+}
+
