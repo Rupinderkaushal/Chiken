@@ -3,8 +3,11 @@ import Chik  from "../../chik.png";
 import React from 'react';
 import Box from "../../box.png";
 import "../tablecol/tb.css";
+
+
 import {useEffect,useState} from "react"
 function NestedTable() {
+
   const expandedRowRender = () => {
     const styLE ={
  
@@ -155,53 +158,19 @@ function NestedTable() {
     );
   };
 
-  const data = [{
-    name: 'Juvinile Jubile',
-    age: 'Chicks',
-    address: 'US San Francisco',
-    distance: '1600m',
-   
-    key: '1'
-},
-{
-    name: 'Juvinile Jubile',
-    age: 'B',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '2'
-},
-{
-    name: 'Juvinile Jubile',
-    age: 'A',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '3'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'A',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '4'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'B',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '5'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'B',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '6'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'C',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '7'
-},
-]
+
+
+const data = [];
+for (let i = 0; i < 100; i++) {
+  data.push({
+    key: i,
+    name: `Edrward ${i}`,
+    age: 32,
+    address: `London Park no. ${i}`,
+    distance : `7${i}`
+  });
+}
+
 const columns = [
     {
         title: 'Event',
@@ -301,33 +270,7 @@ const columns = [
     },
 ]
 
-// const onTableRowExpand = (expanded, record) => {
-//     var keys = [];
-//     console.log('expande', expanded)
-//     console.log('', record);
-//     // if(expanded){
-//     //     keys.push(record.id); // I have set my record.id as row key. Check the documentation for more details.
-//     // }
 
-//     // this.setState({expandedRowKeys: keys});
-// }
- 
-// const [jsonData, setJsonData] = useState("")
-
-// const getDataApi = async()=>{
-
-//     const apiData = await fetch("https://jsonplaceholder.typicode.com/posts")
-
-//     const jsondata = await apiData.json()
-    
-//     setJsonData(jsondata)
-
-//     console.log("json data ### ", jsondata)
-//   }
-
-//   useEffect(() => {
-//     getDataApi()
-//   }, [])
 
   return (
     <div >
@@ -340,8 +283,11 @@ const columns = [
       expandable={{ expandedRowRender }}
     //   onExpand={onTableRowExpand}
       dataSource={data}
-      pagination={false}
+      pagination={true}
+      
       rowKey={(record) => record.key}
+        
+      
     />
     </div>
   );

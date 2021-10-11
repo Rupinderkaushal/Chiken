@@ -15,13 +15,13 @@ import { useDispatch } from 'react-redux';
 import { getMyCoopsAction } from './redux/actions/CoopsActions';
 
 import './App.css';
-// import Navbar from './Components/Navbar/Navbar';
+
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
-import Afilter from './Components/Arrayfilter/Afilter';
-import FilterBtn from './Components/FilterBtn/FilterBtn';
-import ModalL from './Components/modall/ModalL';
+
+import EthereumWallet from './Components/EthereumWallet';
+import MetaPopWindow from "./Components/MetaPopWindow";
 
 function App() {
 
@@ -35,6 +35,7 @@ function App() {
     <Router>
       <div className="App">
           <Navbar />
+       
 
         <Switch>
           {/* <Route path="/order/:id/invoice">
@@ -55,7 +56,7 @@ function App() {
           </Route>
 
           <Route path="/">
-          
+         
             <Hero />
           </Route>
         </Switch>

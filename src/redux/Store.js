@@ -6,6 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 //  import reduer here
 import { coopDetailReducers, getMyCoopReducer, searchCoopReducer } from './reducers/coopReducers';
 import { getResultReducer } from './reducers/resultReducer';
+import { userReducer } from './reducers/userReducer';
 
 //  how to use useSelector
 //  const productCategoryDetailsReducers = useSelector(state => state.productCategoryDetailsReducers)
@@ -21,8 +22,8 @@ const reducer = combineReducers({
     getMyCoopReducer,
     coopDetailReducers,
     getResultReducer,
-    searchCoopReducer
-   
+    searchCoopReducer,
+    userReducer
 
 })
 

@@ -1,0 +1,16 @@
+.ethereumWallet__connectBtn{
+
+    background: #ac7d38;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ethereumWallet__balance{
+    background: white;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+}

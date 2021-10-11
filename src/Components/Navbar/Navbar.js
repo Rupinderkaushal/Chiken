@@ -18,6 +18,7 @@ import useWindowDimensions from "./WindowDimen";
 import { Link, useHistory } from "react-router-dom";
 import MyCoopComponent from "../MyCoopComponent";
 import { SEARCH_COOP_RESET } from "../../redux/constants/myCoopConstants";
+import EthereumWallet from "../EthereumWallet";
 
 const { Option } = Select;
 // import Select from 'rc-select';
@@ -220,21 +221,11 @@ const Navbar = () => {
                 <a href="#">Tutorial</a>
               </div>
             </Col>
-            <Col id="nav-col-row">
-              <Row>
-                <Col id="eth">ETH BALANCE</Col>
-                <Col id="usd1">$0.00 USD</Col>
-              </Row>
-              <Row>
-                <Col id="weth">WETH BALANCE</Col>
-                <Col id="usd">$148.99 USD</Col>
-              </Row>
-              <Col>
-                <div id="col-img">
-                  <img src={vector} />
-                  <img id="vector" src={vector1} />
-                </div>
-              </Col>
+            <Col>
+
+              <EthereumWallet/>
+
+            
             </Col>
           </Row>
         </Col>
