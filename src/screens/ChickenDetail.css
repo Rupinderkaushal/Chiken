@@ -1,0 +1,76 @@
+.chickenDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 150px; */
+}
+
+.chickenDetail__owner__p{
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    padding: 5px;
+    color: white;
+}
+
+.chickenDetail__owner__detail{
+    width: 300px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+
+    background: #205FBC;
+    padding: 8px 30px;
+    /* max-width: 220px; */
+    margin: 0px auto;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+
+.chickenDetail__table{
+    background-color: rgba(32, 95, 188, 0.66);
+
+    padding: 30px 30px;
+    padding-bottom: 0;
+    margin: 10px auto;
+    background: rgba(32, 95, 188, 0.66);
+    border: 2px solid #FFD600;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.table_with_flex{
+    
+    margin: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFD600;
+    border-radius: 10px;
+    background: rgb(4 62 149 / 66%);
+    width: 82%;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    color:  #fff;
+/* font-family: 'Montserrat-SemiBold'; */
+}
+
+
+
+.table_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    margin: 15px 0;
+}
+
+.table_heading{
+    font-weight: 700;
+    font-size: 16px;
+}

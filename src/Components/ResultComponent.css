@@ -1,0 +1,107 @@
+.resultComponent{
+    display: flex;
+    width: 390px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(68, 158, 255, 0.83);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.resultComponent__img{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.resultComponent__left{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    margin: 0 10px;
+
+    flex-wrap: wrap;
+}
+
+.resultComponent__position__timeTaken{
+    
+    display: flex;
+    /* align-items: center; */
+    /* height: 20px; */
+    /* justify-content: space-between; */
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.resultComponent__position{
+
+    padding: 5px 10px;
+    background: yellow;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    font-weight: 700;
+
+}
+
+.resultComponent__timeTaken{
+
+ 
+
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* border: 1px solid; */
+    margin-top: 14px;
+    margin-left: 5px;
+
+}
+
+.resultComponent__coopname__prize{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    flex-wrap: wrap;
+}
+
+.resultComponent__coopname{
+    font-size: 1.4rem;
+    color: white;
+
+}
+
+.resultComponent__prize>span{
+    color: yellow;
+}
+
+.resultComponent__coop__attribute{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.resultComponent__coop__attribute > span{
+    width: 70px;
+    /* border: 1px solid; */
+    margin: 5px 0;
+}
+
+
+@media screen  and (max-width:450px){
+    .resultComponent{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+ 
+    .resultComponent__right, .resultComponent__img{
+        width: 100%;
+    }
+}
