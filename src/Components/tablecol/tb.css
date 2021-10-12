@@ -64,7 +64,21 @@ td span button{
 @media (min-width:320px) and (max-width:360px){
     #lane{
         font-size: 25px !important;
+    }
+    #result-btn{
+        font-size: 10px !important;
+    }
+    #hddr3{
+        font-size: 15px !important;
+    
+    }
+    #srace-btn{
         
+        font-size: 10px !important;
+    }
+    #hddr-span{
+    margin-left: 5px !important;
+    font-size: 12px !important;
     }
     .ant-col-offset-1{
         font-size: 15px !important;
@@ -72,6 +86,9 @@ td span button{
     #btn-btn{
         width: 75px !important;
         height: 40px !important;
+    }
+    #form-item{
+        background-color: green ;
     }
 }
 @media (max-width:'906px'){

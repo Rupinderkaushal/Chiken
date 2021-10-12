@@ -133,7 +133,7 @@ function ResulT() {
       <div  >
        <Row style={ROW} >
                
-                   <Col  offset={21} span={2}><Button style={{borderRadius:'5px',fontSize:'18px',height:'37px',background:'yellow',border:'none',color:'black',fontWeight:'bold'}} type='primary'>Watch Replay</Button></Col>     
+                   <Col  offset={21} span={2}><Button id='result-btn' style={{borderRadius:'5px',fontSize:'18px',height:'37px',background:'yellow',border:'none',color:'black',fontWeight:'bold'}} type='primary'>Watch Replay</Button></Col>     
             </Row>
             
          <Table scroll={{x:400}}  columns={columns} dataSource={data} pagination={false} />

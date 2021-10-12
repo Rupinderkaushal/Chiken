@@ -1,5 +1,7 @@
 import { Form, Input, Button, Checkbox,Row,Col, Select, Divider } from 'antd';
+import "../FilterBtn/filterbtn2.css";
 const {Option} = Select;
+
 const FilterBtn2 = () => {
   function onChange(e) {
     console.log(`checked = ${e.target.checked}`);

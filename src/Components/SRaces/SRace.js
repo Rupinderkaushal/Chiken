@@ -132,8 +132,8 @@ function SRace() {
     return(
       <div  >
        <Row style={ROW} >
-                <Col  span={10}><h3 >Juvinile Jubile<span style={{fontSize:'20px',marginLeft:'50px'}}><small>Starts In: <label style={{margin:'0px 10px'}}><img src={clock}/><label><img style={{marginLeft:'-15px',marginTop:'5px'}} src={clock1}/></label></label><label>00:45:50</label></small></span></h3></Col>
-                   <Col  offset={12} span={2}><Button style={{borderRadius:'5px',fontSize:'18px',height:'37px'}} type='primary'>Watch</Button></Col>     
+                <Col  span={10}><h3 id="hddr3" >Juvinile Jubile<span id='hddr-span' style={{fontSize:'20px',marginLeft:'50px'}}><small>Starts In: <label style={{margin:'0px 10px'}}><img src={clock}/><label><img style={{marginLeft:'-15px',marginTop:'5px'}} src={clock1}/></label></label><label>00:45:50</label></small></span></h3></Col>
+                   <Col  offset={12} span={2}><Button id='srace-btn'  style={{borderRadius:'5px',fontSize:'18px',height:'37px'}} type='primary'>Watch</Button></Col>     
             </Row>
             
          <Table scroll={{x:400}} columns={columns} dataSource={data} pagination={false} />
