@@ -2,19 +2,7 @@
 
     background-image: url("./assests/images/banner2.jpg");
     font-family: 'Montserrat';
-    /* background-size: cover;
-    padding-bottom: 70px; */
-
-    /* background-position: fixed;
-    background-position: center;
-    background-size: cover;
-    background-origin: border-box;
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
-
-
-    /* font-family: 'Montserrat-Regular'; */
-    /* background: url(../images/banner2.jpg); */
+   padding-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

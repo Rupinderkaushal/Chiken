@@ -2,8 +2,6 @@ import { Table,Row,Col,Button } from 'antd';
 import Chik  from "../../chik.png";
 import React from 'react';
 import Box from "../../box.png";
-import clock from "../../va.png";
-import clock1 from "../../vb.png";
 import "../tablecol/tb.css";
 function ResulT() {
   const expandedRowRender = () => {
@@ -171,37 +169,15 @@ function ResulT() {
     race:'Live',
     distance: '1600m',
     key: '4'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'A',
-    address: 'US San Francisco',
-    race:'Live',
-    distance: '1600m',
-    key: '5'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'A',
-    address: 'US San Francisco',
-    distance: '1600m',
-    race:'Live',
-    key: '6'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'A',
-    address: 'US San Francisco',
-    distance: '1600m',
-    race:'Live',
-    key: '7'
-},
+}, 
 ]
 const columns = [
     {
         title: 'Event',
         render: (text, record) => {
             return (
-                <div id="name-div">
-                   <a> {record.name.split(" ")[0]} <br /> {record.name.split(" ")[1]}</a>
-                    {/* {record.name} */}
+                <div className='event' id="name-div">
+                    {record.name}
                 </div>)
         },
         key: 'key'
@@ -211,9 +187,9 @@ const columns = [
         render: (text, record) => {
             console.log(record.address);
             return (
-                <div id="name-div">
-                    {/* {record.address} */}
-                    {record.address.split(" ")[0]} {record.address.split(" ")[1]} <br /> {record.address.split(" ")[2]}
+                <div className='event' id="name-div">
+                    {record.address}
+                   
                 </div>
 
             )
@@ -251,16 +227,7 @@ const columns = [
             )
         }
     },
-    // {
-    //     title: 'Entry Fee',
-    //     render:()=>{
-    //         return(
-    //             <div id="name-div">
-    //                 <p>$5.99</p>
-    //             </div>
-    //         )
-    //     }
-    // },
+    
     {
         title: 'Prize Pool',
         render:()=>{
@@ -271,28 +238,10 @@ const columns = [
             )
         }
     },
-    // {
-    //     title: 'Starts In',
-    //     render:(text,record)=>{
-    //         return(
-    //             <div id="name-div">
-    //                {record.race}
-    //             </div>
-    //         )
-    //     }
-    // },
+   
 ]
 
-// const onTableRowExpand = (expanded, record) => {
-//     var keys = [];
-//     console.log('expande', expanded)
-//     console.log('', record);
-//     // if(expanded){
-//     //     keys.push(record.id); // I have set my record.id as row key. Check the documentation for more details.
-//     // }
 
-//     // this.setState({expandedRowKeys: keys});
-// }
  
 
   return (
@@ -303,8 +252,9 @@ const columns = [
       expandRowByClick={true}
       expandable={{ expandedRowRender }}
     //   onExpand={onTableRowExpand}
+    id='tabb'
       dataSource={data}
-      pagination={false}
+      pagination={true}
       rowKey={(record) => record.key}
     />
     </div>

@@ -20,8 +20,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import Afilter from './Components/Arrayfilter/Afilter';
-import FilterBtn from './Components/FilterBtn/FilterBtn';
 import ModalL from './Components/modall/ModalL';
+import PopUp from "./Components/PopUp/PopUp";
 
 function App() {
 
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <Router>
+    
       <div className="App">
           <Navbar />
 

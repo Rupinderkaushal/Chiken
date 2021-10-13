@@ -233,7 +233,7 @@ function NestedTable() {
 
   const data = [{
     name: 'Juvinile Jubile',
-    age: 'Chicks',
+    age: 'Chic',
     address: 'US San Francisco',
     distance: '1600m',
    
@@ -258,35 +258,19 @@ function NestedTable() {
     address: 'US San Francisco',
     distance: '1600m',
     key: '4'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'B',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '5'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'B',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '6'
-}, {
-    name: 'Juvinile Jubile',
-    age: 'C',
-    address: 'US San Francisco',
-    distance: '1600m',
-    key: '7'
 },
 ]
 const columns = [
     {
         title: 'Event',
-       
         render: (text, record) => {
             return (
-                <div id="name-div">
-                   <a> {record.name.split(" ")[0]} <br /> {record.name.split(" ")[1]}</a>
-                    {/* {record.name} */}
+                <div className='event'  id="name-div">
+                    
+                    {record.name}
+                   
+                    {/* {record.name.split(" ")[0]}  {record.name.split(" ")[1]} */}
+                    {/* {record.name.split(" ")[0]} <br /> {record.name.split(" ")[1]} */}
                 </div>)
         },
         
@@ -298,9 +282,11 @@ const columns = [
         render: (text, record) => {
             // console.log(record.address);
             return (
-                <div id="name-div">
-                    {/* {record.address} */}
-                    {record.address.split(" ")[0]} {record.address.split(" ")[1]} <br /> {record.address.split(" ")[2]}
+                <div  id="name-div">
+                    {record.address}
+                    
+
+                    {/* {record.address.split(" ")[0]} {record.address.split(" ")[1]} <br /> {record.address.split(" ")[2]} */}
                 </div>
 
             )
@@ -336,7 +322,7 @@ const columns = [
         render:() =>{
             return(
                 <div style={{textAlign:"center"}}>
-                   <a href="#"> <img src={Box}/></a>
+                   <a href="#"> <img style={{height:'20px',width:'20px'}} src={Box}/></a>
                 </div>
             )
         }
@@ -377,38 +363,11 @@ const columns = [
     },
 ]
 
-// const onTableRowExpand = (expanded, record) => {
-//     var keys = [];
-//     console.log('expande', expanded)
-//     console.log('', record);
-//     // if(expanded){
-//     //     keys.push(record.id); // I have set my record.id as row key. Check the documentation for more details.
-//     // }
-
-//     // this.setState({expandedRowKeys: keys});
-// }
- 
-// const [jsonData, setJsonData] = useState("")
-
-// const getDataApi = async()=>{
-
-//     const apiData = await fetch("https://jsonplaceholder.typicode.com/posts")
-
-//     const jsondata = await apiData.json()
-    
-//     setJsonData(jsondata)
-
-//     console.log("json data ### ", jsondata)
-//   }
-
-//   useEffect(() => {
-//     getDataApi()
-//   }, [])
 
   return (
-    <div >
+    <div  >
         {/* {jsonData && jsonData.map((value)=>(<p>{value.title}</p>))} */}
-        <Table
+        <Table 
         scroll={{x:400}}
         id='tabb'
       columns={columns}
@@ -417,7 +376,7 @@ const columns = [
       expandable={{ expandedRowRender }}
     //   onExpand={onTableRowExpand}
       dataSource={data}
-      pagination={false}
+      pagination={true}
     //   rowKey={(record) => record.key}
     />
     </div>
