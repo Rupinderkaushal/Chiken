@@ -75,7 +75,7 @@ const Hero = () => {
                              <Col  >
                                 <div id='span' style={{borderRadius:'5px',background:'#5B6FB6',padding:'10px 20px'}} className='d-flex '>
                                     <div >
-                                        <label id="label" style={{color:'white', fontFamily: "Montserrat",fontStyle:"italic",fontSize:'15px',fontWeight:'bold'}}><span style={{color:'#FFE500'}}>315516</span> RACES</label>
+                                        <label id="label" style={{color:'white', fontFamily: "Montserrat",fontStyle:"italic",fontSize:'15px',fontWeight:'bold',marginRight:"10px"}}><span style={{color:'#FFE500'}}>315516</span> RACES</label>
                                     </div>
                                     <div>
                                         <label style={{color:'white', fontFamily: "Montserrat",fontStyle:"italic",fontSize:'15px',fontWeight:'bold'}} ><span style={{color:"#89EC6F"}}>$24,154,45 USD</span> WON</label>

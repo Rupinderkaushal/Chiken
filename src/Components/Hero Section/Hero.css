@@ -65,6 +65,7 @@ a:hover{
 
 .ant-tabs-ink-bar {
     height: 5px;
+    margin-left: 15px !important;
     background: black !important;
   }
 .ant-modal-content{
