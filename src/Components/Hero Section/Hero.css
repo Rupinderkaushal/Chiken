@@ -8,6 +8,9 @@
     margin-top: 40px;
 
 }
+/* #label{
+    margin-right: 20px;
+} */
 
 th{
     text-align: center !important;
@@ -75,3 +78,91 @@ a:hover{
     padding: 0px !important;
 }
 
+@media (min-width:320px) and (max-width:360px){
+    
+    #main-wrapper{
+        flex-direction: column !important;
+        
+    }
+    #switch{
+        margin-left: 0 !important;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    #btn-wrap{
+        flex-direction: column !important;
+        
+    }
+    #span{
+        
+        flex-direction: column !important;
+        margin-bottom: 10px;
+
+    }
+    #label{
+        margin-left: 25px;
+    }
+    #btn-filter{
+        margin-left: 50px;
+    }
+}
+@media  (min-width:361px) and (max-width:570px){
+    #main-wrapper{
+        flex-direction: column !important;
+        
+    }
+    #switch{
+        margin-left: 0 !important;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    #btn-wrap{
+        flex-direction: column !important;
+        
+    }
+    #span{
+        
+        flex-direction: column !important;
+        margin-bottom: 10px;
+
+    }
+    #label{
+        margin-left: 25px;
+    }
+    #btn-filter{
+        margin-left: 50px;
+    }
+   
+}
+@media  (min-width:571px) and (max-width:750px){
+    #main-wrapper{
+        flex-direction: column !important;
+        
+    }
+    #switch{
+        margin-left: 0 !important;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    #btn-wrap{
+        flex-direction: column !important;
+        
+    }
+    #span{
+        
+        flex-direction: column !important;
+        margin-bottom: 10px;
+
+    }
+    #label{
+        margin-left: 25px;
+    }
+    #btn-filter{
+        margin-left: 50px;
+    }
+   
+}
+
+@media (min-width:751px)and (max-width:1248px){
+
+}

@@ -1,0 +1,87 @@
+#pendingrace{
+    width: 80%;
+    margin: auto;
+}
+
+
+@media (min-width:320px) and (max-width:360px){
+    #pendingrace{
+        width: 100%;
+        
+    }
+    .race-pending-hddr{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .enterrace{
+       margin-bottom: 20px;
+    }
+    .prizepool{
+        margin-bottom: 20px;
+    }
+    .navbar-race-pending{
+        padding: 2px !important;
+        
+    }
+    #navbar-span{
+        margin: 0px !important;
+    }
+    #card-container{
+        flex-direction: column;
+    }
+}
+@media  (min-width:361px) and (max-width:570px){
+    #pendingrace{
+        width: 100%;
+        
+    }
+    .race-pending-hddr{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .enterrace{
+       margin-bottom: 20px;
+    }
+    .prizepool{
+        margin-bottom: 20px;
+    }
+    .navbar-race-pending{
+        padding: 2px !important;
+        justify-content: center;
+    }
+    #navbar-span{
+        margin: 0px !important;
+    }
+    #card-container{
+        flex-direction: column;
+    }
+}
+@media  (min-width:571px) and (max-width:1300px){
+    #pendingrace{
+        width: 100%;
+        
+    }
+    .race-pending-hddr{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .enterrace{
+       margin-bottom: 20px;
+    }
+    .prizepool{
+        margin-bottom: 20px;
+    }
+    .navbar-race-pending{
+        padding: 2px !important;
+        justify-content: center;
+    }
+    #navbar-span{
+        margin: 0px !important;
+    }
+    #card-container{
+        flex-wrap: wrap;
+    }
+}

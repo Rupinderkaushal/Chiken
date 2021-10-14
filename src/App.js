@@ -22,6 +22,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import Afilter from './Components/Arrayfilter/Afilter';
 import ModalL from './Components/modall/ModalL';
 import PopUp from "./Components/PopUp/PopUp";
+import RacePending from "./Components/RacePending/RacePending";
 
 function App() {
 
@@ -46,7 +47,10 @@ function App() {
             <ResultScreen />
            
           </Route>
-
+          <Route path="/race-pending">
+            <RacePending />
+           
+          </Route>
           <Route path="/myCoops">
             <MyCoop />
           </Route>

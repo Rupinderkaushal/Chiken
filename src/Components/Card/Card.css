@@ -1,0 +1,27 @@
+.chicken-card{
+    width: 32%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:   rgba(68, 158, 255, 0.83);
+    
+}
+@media (min-width:320px) and (max-width:360px){
+    
+.chicken-card{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+}
+@media  (min-width:361px) and (max-width:570px){
+    .chicken-card{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;}
+}
+@media  (min-width:571px) and (max-width:750px){
+    .chicken-card{
+        width: 48%;
+        
+        }
+}
